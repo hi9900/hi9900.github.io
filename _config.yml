@@ -28,7 +28,8 @@ github:
   username: hi9900 # change to your GitHub username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: # change to your Twitter username
+  # username: twitter_username # change to your Twitter username
 
 social:
   # Change to your full name.
@@ -104,6 +105,7 @@ avatar: "/assets/commons/avatar.png"
 social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
+# 우측 목차 표시 여부
 toc: true
 
 comments:
