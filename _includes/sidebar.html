@@ -7,8 +7,7 @@
       {%- capture avatar_url -%}
       {% include media-url.html src=site.avatar %}
       {%- endcapture -%}
-      <!-- <img src="{{-  avatar_url -}}" width="112" height="112" alt="avatar" -->
-      <img src="{{-  '/assets/commons/avatar.png' -}}" width="112" height="112" alt="avatar"
+      <img src="{{  '/assets/commons/avatar.png' | avatar_url }}" width="112" height="112" alt="avatar"
         onerror="this.style.display='none'">
       {%- endif -%}
     </a>
@@ -42,7 +41,7 @@
     </ul>
   </nav>
 
-  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+  <div class="sidebar-bottom d-flex flex-wrap justify-content-center align-items-center w-100">
     {% unless site.theme_mode %}
     <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
       <i class="fas fa-adjust"></i>
